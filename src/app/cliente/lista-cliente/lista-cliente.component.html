@@ -1,3 +1,28 @@
-<p>
-  lista-cliente works!
-</p>
+<div class="container">
+
+  <div class="row">
+    <div class="col-1">
+
+     <a class="btn btn-primary" href="/">Voltar</a><br><br>
+
+    </div>
+    <div class="col-md2">
+
+      <a class="btn btn-primary" href="novo-cliente"><i class="pi pi-plus"></i>Novo Cliente</a><br><br>
+
+    </div>
+  
+  </div>
+  
+  <table class="table table-striped">
+    <tr>
+      <th>id</th>
+      <th>nome</th>
+    </tr>
+    <tr *ngFor="let pessoa of clientes">
+      <td> {{ pessoa.id }} </td>
+      <td> {{ pessoa.nome }} </td>
+    </tr>
+
+</table>
+</div>

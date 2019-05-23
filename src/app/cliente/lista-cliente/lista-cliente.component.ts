@@ -7,9 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListaClienteComponent implements OnInit {
 
+  clientes: { id: number; nome: string; }[];
+ 
+
   constructor() { }
 
   ngOnInit() {
+
+
+    this.clientes = [
+      {id: 1,nome: "kelvin"},
+      {id: 2,nome: "Luiz"},
+      {id: 3,nome: "Fernando"},
+    ];
+
   }
 
 }
